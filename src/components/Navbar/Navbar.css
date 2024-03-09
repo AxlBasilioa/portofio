@@ -1,0 +1,33 @@
+.navbar{
+    background:transparent;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    backface-visibility: hidden;
+    animation: Showering 2.5s ease-in-out;
+}
+.nombre{
+    color:white;
+    background: transparent;
+    padding: 14px 15px;
+    border: none;
+    display: inline-block;
+    margin:0 5px;
+    font-size: large;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+    backface-visibility: hidden;
+    animation: Showering 2.5s ease-in-out;
+}
+@keyframes Showering {
+    0%{
+        height: 70vh;
+        opacity: 0%;
+    }
+    100%{
+        height: -70vh;
+        opacity: 100%;
+    }
+}
