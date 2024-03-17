@@ -12,6 +12,9 @@
     align-content: center;
     display: flex;
 }
+.about{
+    font-size: large;
+}
 .introduction{
     margin-left:20%;
     position: absolute;
@@ -19,15 +22,16 @@
 }
 p{
     color:white;
+    animation: ShoweringText 2s ease-in-out;
 }
 .nameHeader{
     font-weight: bold;
     font-size: 5vh;
-    animation: Showering 2s ease-in-out;
+    animation: ShoweringText 2s ease-in-out;
 }
 .line{
-    position: absolute;
     width:30vh; 
+    position: absolute;
     height:50%;  
     border:solid;
     top:-2vh;
@@ -72,6 +76,15 @@ p{
     100%{
         opacity: 100%;
         top:10vh;
+    }
+}
+@keyframes ShoweringText {
+    0%{
+        opacity: 0%;
+        margin-top: 1vh;
+    }
+    100%{
+        opacity: 100%;
     }
 }
 @keyframes Showering {
